@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: "Rokkitt", Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+  }
+
+
+.main-header {
+    width: 1,512px; 
+    height: 121.97px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    opacity: 0.8; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.11);
+    padding: 15px 45px 15px 45px;
+}
+
+.logo{
+    width: 149.69px;
+    height: 91.97px;
+}
+
+.main-header .menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-header .menu ul li {
+    margin-right: 20px;
+}
+
+.main-header .menu ul li a {
+    text-decoration: none;
+    color: #7e7878;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: border-color 0.3s;
+}
+
+.main-header .menu ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s, width 0.3s;
+}
+
+.main-header .menu ul li a:hover::after {
+    background-color: #E71C5C; 
+    width: 100%;
+}
+
+.main-header .user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.main-header .user-actions .login {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.main-header .user-actions .register {
+    background-color: #E71C5C; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main-header .user-actions .register:hover {
+    background-color: #e02d81; 
+}
+
+.inicio {
+    display: flex;
+    width: 100%;
+    height: 701px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.texts {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.text1 h1 {
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 102.33px;
+    text-align: left;
+}
+
+.text2 h2 {
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 37.52px;
+    text-align: left;
+}
+
+.buscaviagem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.borda {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 112px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8F8F8F;
+    border-radius: 43px;
+    box-shadow: 0px 4px 4px 0px #00000040 25%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.localgroup, .datagroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.local-icon, .calendar {
+    width: 40px;
+    height: 40px;
+}
+
+.local-text, .data-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.local-text h3, .data-text h3 {
+    margin: 0;
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.local-text h3:first-child, .data-text h3:first-child {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.pesquisar {
+    width: 74px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; 
+}
+
+.imagens {
+    width: 40%;
+    position: relative;
+}
+
+.imagem1, .imagem2 {
+    position: absolute;
+}
+
+.imagem1 {
+    width: 476px;
+    height: 714px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+
+.imagem2 {
+    width: 263px;
+    height: 344px;
+    top: 307px;
+    left: 258px;
+    border-radius: 132px 0px 0px 0px;
+    border: 11px 0px 0px 0px;
+}
+
+
+.sobre {
+    display: flex;
+    width: 100%;
+    height: 730px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.imagens-sobre {
+    width: 50%;
+    position: relative;
+}
+
+.imagem-sobre,
+.imagem2-sobre {
+    position: absolute;
+    border-radius: 180px 0px 0px 0px;
+}
+
+.imagem-sobre {
+    width: 350px;
+    height: 525px;
+}
+
+.imagem2-sobre {
+    width: 296px;
+    height: 423px;
+    top: 307px;
+    left: 211px;
+}
+
+.text-sobre {
+    width: 50%;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text1-sobre h3,
+.text2-sobre h1,
+.text3-sobre h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.text1-sobre h3 {
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 31.84px;
+    letter-spacing: 0.11em;
+    text-align: left;
+    color: #E71C5C;
+}
+
+.text2-sobre h1 {
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 79.59px;
+    text-align: left;
+}
+
+.text3-sobre h3 {
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 31.84px;
+    text-align: justify;
+    color: #8F8F8F;
+}
+
+.frame {
+    display: flex;
+    gap: 70px;
+}
+
+.text-frame,
+.text-frame2,
+.text-frame3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.numero,
+.numero2,
+.numero3 {
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72.77px;
+    letter-spacing: 0.11em;
+    text-align: left;
+    color: #E71C5C;
+}
+
+.text1-frame,
+.text1-frame2,
+.text1-frame3 {
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 28.43px;
+    letter-spacing: 0.11em;
+    text-align: left;
+}
+
+
+.servicos{
+    overflow: hidden;
+    top: 1937px;
+    left: -1px;
+    gap: 4px;
+    margin-top: 100px;
+    padding-inline: 50px;
+}
+
+.frame2{
+    width: 1,252px;
+    height: 160px;
+    gap: 320px;
+    display: flex;
+    align-items: center;
+}
+
+.text-servicos{
+
+    h1 {
+
+        font-family: "Rokkitt", Arial, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 56.85px;
+        text-align: left;
+        color:#000000;
+    }
+
+    h3{
+        font-family: "Rokkitt", Arial, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 31.84px;
+        letter-spacing: 0.11em;
+        text-align: left;
+        color:#E71C5C;
+        }
+}
+
+
+.setas{
+    width: 94px;
+    height: 40px;
+    gap: 14px;
+    float: right;
+}
+
+.slide{
+    width: 1,522px;
+    height: 696px;
+    padding: 94px 0px 94px 0px;
+    color:#FFFFFF;
+}
+
+.slide2{
+    width: 2,402px;
+    height: 508px;
+    top: 94px;
+    padding: 0px 146px 0px 146px;
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.c2{
+    width: 374px;
+    height: 508px;
+    left: 146px;
+    border-radius: 30px;
+    justify-content: center;
+    box-shadow: 4px 4px 12px #aaaa;
+    display: flex;
+    align-items: center;
+}
+
+.cartao2{
+    width: 374px;
+    height: 508px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+
+.texto-cartao2 h1{
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27.29px;
+    text-align: left;
+    color:#000000;
+    display: flex;
+    padding-bottom: 10px;
+
+}
+
+.texto2-cartao2{
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.19px;
+    text-align: left;
+    color:#000000;
+    padding-bottom: 20px;
+}
+
+.texto3-cartao2{
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27.29px;
+    text-align: left;
+    color:#E71C5C;
+    float:left;
+}
+
+.texto4-cartao2{
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27.29px;
+    text-align: left;
+    color:#8F8F8F;
+    float:right;
+}
+
+.imagem-cartao{
+    width: 374px;
+    height: 290px;
+    left: 1448px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.precos {
+    width: 1,236px;
+    height: 765px;
+    top: 2,904px;
+    left: 138px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    padding-top: 50px; 
+}
+
+.text-preco {
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+.text1-preco {
+    margin-bottom: 10px; 
+    padding: 0 250px;
+}
+
+.text1-preco h1 {
+    font-size: 36px; 
+}
+
+.text2-texto {
+    margin-bottom: 20px; 
+}
+
+.cards {
+    display: flex;
+    justify-content: center; 
+    gap: 50px; 
+}
+
+.card-moved {
+    position: relative;
+    top: -200px;
+}
+
+.card-container {
+    width: 259px;
+    height: 316px;
+    border-radius: 40px;
+    box-shadow: 4px 4px 12px #aaaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.card-container img {
+    width: 223.5px;
+    height: 187px;
+}
+
+.text-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    width: 200px;
+}
+
+.text-card h1{
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.29px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.card-description {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.card-description span:first-child {
+    font-family:"Rokkitt", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27.29px;
+    color:#E71C5C;
+}
+
+.card-description span:last-child {
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.74px;
+    color:#8F8F8F;
+}
+
+
+.text2-texto{
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27.29px;
+    padding:20px;
+    color:#8F8F8F;
+}
+
+.btn-tp {
+    width: 163px; 
+    height: 60px; 
+    border-radius: 200px; 
+    background-color: #E71C5C; 
+    border: none; 
+    cursor: pointer; 
+    overflow: hidden; 
+    margin-top: 10px; 
+}
+
+.btn-text {
+    width: 27px; 
+    height: 27px; 
+    font-family: "Rokkitt", Arial, sans-serif; 
+    font-size: 24px; 
+    font-weight: 400; 
+    line-height: 27px; 
+    text-align: center; 
+    color: #FFFFFF; 
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-footer{
+    width: 344px;
+    height: 175px;
+}
+
+.contato2{
+    width: 370px;
+    height: 170px;
+}
+
+
+
+.text-footer h1{
+    font-family: "Rokkitt", Arial, sans-serif; 
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34.11px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.text2-footer{
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34.11px;
+    text-align: left;
+    color:#8F8F8F;
+}
+
+.logo2{
+    width: 149.69px;
+    height: 91.97px;
+    justify-content: center;
+}
+
+.contato2 h1{
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34.11px;
+    text-align: left;
+    padding-bottom:20px;
+}
+
+.text-contato{
+    font-family: "Rokkitt", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34.11px;
+    text-align: left;
+    color:#8F8F8F;
+
+}
+
+.empresa{
+    width: 191px;
+    height: 60px;
+}
+
+.empresa h1{
+    font-family: "Rokkitt", Arial, sans-serif;;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 80px;
+    letter-spacing: -0.015em;
+    text-align: left;
+
+}
